@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Web by Rebecca Enmil</title>
+    <!--tab icon-->
+    <link rel="icon" href="image/headerPic.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--Style-->
+    <link rel="stylesheet" href="css/HomeStyle.css">
+
+    <style>
+        /* Add this style block to highlight active menu item */
+        .active-tab {
+            background-color: #ff66c4;
+            color: white;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+
+    <script>
+        // Add this script to set active class on menu item click
+        $(document).ready(function () {
+            $('.nav-link').click(function () {
+                $('.nav-item').removeClass('active-tab');
+                $(this).parent().addClass('active-tab');
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--HEADER-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand mr-auto" href="Home.html">
+                    <img src="image/headerPic.png" alt="Rebecca Enmil" width="200" height="50">
+                </a>
+                <!--TOGGLE BUTTON-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto"
+                        style="font-family: 'Times New Roman', Times, serif; font-size: 20px;">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="window.location.href='Home.html';"
+                                style="padding-right: 30px;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="window.location.href='About.html';"
+                                style="padding-right: 30px;">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="window.location.href='Portfolio.html';"
+                                style="padding-right: 30px;">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="window.location.href='Resume.html';"
+                                style="padding-right: 30px;">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> <!--END OF NAV-->
+
+        <hr> <!-- Separating line -->
+        <div class="row" style="border-color: beige;" id="mainContent">
+            <!-- First Column -->
+            <div class="col-md-6"
+                style="padding-left: 80px; padding-top: 50px; padding-right: 100px; color: black; font-family:'Times New Roman', Times, serif">
+                <div class="container">
+                    <h4 style="font-size: 40px;"><strong>ABOUT ME</strong></h4>
+                    <p>As an innovative digital designer, I possess a profound passion for
+                        cultivating visually compelling experiences that transcend the ordinary.
+                        My journey in the realm of design is marked by an unwavering commitment to marrying
+                        creativity with technical finesse, resulting in captivating visuals that not
+                        only arrest attention but also evoke emotion and meaning.
+                        With a keen eye for detail honed over years of dedicated practice, I navigate the
+                        digital landscape with an insatiable thirst for pushing boundaries and exploring
+                        new frontiers of design. Every project becomes a canvas upon which I weave intricate
+                        narratives, carefully selecting colors, shapes, and textures to craft immersive
+                        experiences that leave a lasting impression.</p>
+                    <p>My expertise lies in leveraging the
+                        latest tools and technologies to breathe life into ideas, transforming concepts into
+                        tangible manifestations of aesthetic excellence. Whether it's a sleek interface, a
+                        dynamic logo, or a breathtaking animation, I approach each endeavor with equal parts
+                        artistry and precision, ensuring that every pixel serves a purpose in conveying the
+                        essence of the brand. Driven by a deep-seated commitment to excellence, I thrive on
+                        the challenges of the ever-evolving digital landscape, constantly pushing myself to
+                        innovate and evolve. With a finger on the pulse of emerging trends and a heart attuned
+                        to the nuances of design theory, I strive to create work that not only captivates
+                        audiences but also resonates with them on a profound level.</p>
+                    <p>In essence, I am not merely a designer; I am a storyteller, a curator of experiences, and a
+                        guardian of brands' identities. With each project I undertake, I seek to leave an indelible mark
+                        on the digital landscape,
+                        one pixel at a time. Welcome to my world, where imagination knows no bounds, and
+                        creativity knows no limits.</p>
+                </div>
+            </div>
+
+            <!-- Second Column -->
+            <div class="col-md-6" style="padding-top: 50px;">
+                <div class="image-container">
+                    <img src="image/Me.png" alt="Gallery" width="500" height="500" class="pop-up-image slide-up">
+                </div>
+            </div>
+        </div> <!--END OF FIRST ROW-->
+
+
+        <!-- Footer -->
+        <hr> <!-- Separating line -->
+        <footer class="footer mt-auto py-3">
+            <div class="container">
+                <!-- <span class="text-muted">Place footer content here.</span> -->
+                <p style="text-align: center; margin-top: 5px;">&copy; 2024 Rebecca Enmil Portfolio</p>
+                <!-- Indication for the footer -->
+            </div>
+        </footer>
+
+        <button onclick="scrollToTop()" id="upBtn" title="Go to top">UP</button>
+        <script>
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("upBtn").style.display = "block";
+                } else {
+                    document.getElementById("upBtn").style.display = "none";
+                }
+            }
+
+            function scrollToTop() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
+    </div>
+</body>
+
+</html>

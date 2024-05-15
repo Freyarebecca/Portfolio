@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <!--tab icon-->
+    <link rel="icon" href="image/headerPic.png">
+    <title>My Pesonal Resume by Rebecca C. Enmil</title>
+    <link rel="stylesheet" href="css/Resume.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--Style-->
+    <link rel="stylesheet" href="css/HomeStyle.css">
+
+
+    <style>
+        /* Add this style block to highlight active menu item */
+        .active-tab {
+            background-color: #ff66c4;
+            color: white;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+
+    <script>
+        // Add this script to set active class on menu item click
+        $(document).ready(function () {
+            $('.nav-link').click(function () {
+                $('.nav-item').removeClass('active-tab');
+                $(this).parent().addClass('active-tab');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--HEADER-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand mr-auto" href="Home.html">
+                    <img src="image/headerPic.png" alt="Rebecca Enmil" width="200" height="50">
+                </a>
+                <!--TOGGLE BUTTON-->
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="window.location.href='Home.html';"
+                                style="padding-right: 30px;font-family: 'Times New Roman', Times, serif; font-size: 20px;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="window.location.href='About.html';"
+                                style="padding-right: 30px;font-family: 'Times New Roman', Times, serif; font-size: 20px;">About
+                                Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="window.location.href='Portfolio.html';"
+                                style="padding-right: 30px;font-family: 'Times New Roman', Times, serif; font-size: 20px;">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="window.location.href='Resume.html';"
+                                style="padding-right: 30px;font-family: 'Times New Roman', Times, serif; font-size: 20px;">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> <!--END OF NAV-->
+
+        <div class="container">
+            <div class="left_side">
+                <div class="profileText">
+                    <div class="imagebox">
+                        <img src="image/formalPic.jpg" alt="">
+                    </div>
+                    <h2>Rebecca C. Enmil <br><span>Digital Designer</span></h2>
+                </div>
+
+                <div class="contactInfo">
+                    <h3 class="title">Contact Information</h3>
+                    <ul>
+                        <li>
+                            <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <span class="text">09463124245</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <span class="text">rebeccalimne@gmail.com</span>
+                        </li>
+                        <li>
+                            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <span class="text">Casiguran, Sorsogon</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contactInfo education" style="color: aliceblue;">
+                    <h3 class="title">Educational Attainment</h3>
+                    <ul>
+                        <li>
+                            <h4 style="font-size: 20px;"><strong>TERTIARY</strong></h4>
+                            <h6>2020-2024</h6>
+                            <h6>Computer Communication Development Institute</h6>
+                            <h6>Bachelor of Science in Information Technology</h6>
+                        </li>
+                        <li>
+                            <h4 style="font-size: 20px;"><strong>SECONDARY</strong></h4>
+                            <h6>2014-2020</h6>
+                            <h6>Casiguran Technical Vocational School</h6>
+                        </li>
+                        <li>
+                            <h4 style="font-size: 20px;"><strong>PRIMARY</strong></h4>
+                            <h6>2008-2014</h6>
+                            <h6>Casiguran Central School </h6>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contactInfo Languages">
+                    <h3 class="title">Languages</h3>
+                    <ul>
+                        <li>
+                            <span class="text">English</span>
+                            <span class="percent">
+                                <div style="width: 75%;"></div>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="text">Tagalog</span>
+                            <span class="percent">
+                                <div style="width: 90%;"></div>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="about interest" style="padding-top: 60px;">
+                    <h3 class="title">Interest</h3>
+                    <ul>
+                        <li style="padding-right: 10px; color: aliceblue;">
+                            <span class="icon"><i class="fa fa-cutlery" aria-hidden="true"
+                                    style="color: aliceblue; padding-left: 15px;"></i></span>
+                            <span class="text">Cooking</span>
+                        </li>
+                        <li style="padding-right: 10px; color: aliceblue;">
+                            <span class="icon"><i class="fa fa-book" aria-hidden="true"
+                                    style="color: aliceblue; padding-left: 15px;"></i></span>
+                            <span class="text">Reading</span>
+                        </li>
+                        <li style="padding-right: 10px; color: aliceblue;">
+                            <span class="icon"><i class="fa fa-pagelines" aria-hidden="true"
+                                    style="color: aliceblue; padding-left: 15px;"></i></span>
+                            <span class="text">Gardening</span>
+                        </li>
+                        <li style="padding-right: 10px; color: aliceblue;">
+                            <span class="icon"><i class="fa fa-gamepad" aria-hidden="true"
+                                    style="color: aliceblue; padding-left: 15px;"></i></span>
+                            <span class="text">Gaming</span>
+                        </li>
+                        <li style="padding-right: 10px; color: aliceblue;">
+                            <span class="icon"><i class="fa fa-plane" aria-hidden="true"
+                                    style="color: aliceblue; padding-left: 15px;"></i></span>
+                            <span class="text">Travel</span>
+                        </li>
+                        <li style="padding-right: 10px; color: aliceblue;">
+                            <span class="icon"><i class="fa fa-paint-brush" aria-hidden="true"
+                                    style="color: aliceblue; padding-left: 15px;"></i></span>
+                            <span class="text">Designing</span>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="contactInfo education" style="color: aliceblue;">
+                    <h3 class="title">CERTIFICATE</h3>
+                    <ul>
+                        <li>
+                            <h6>Computer Hardware Basics,SkillsforAll(2024)</h6>
+                        </li>
+                        <li>
+                            <h6>Creating Compelling Reports,SkillsforAll(2024)</h6>
+                        </li>
+                        <li>
+                            <h6>Introduction to Cybersecurity,SkillsforAll(2024)</h6>
+                        </li>
+                        <li>
+                            <h6>Introduction to Data Science,SkillsforAll(2024)</h6>
+                        </li>
+                        <li>
+                            <h6>Introduction to Internet of Things,SkillsforAll(2024)</h6>
+                        </li>
+                        <li>
+                            <h6>Python Essentials 1,SkillsforAll(2024)</h6>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+            <div class="right_side">
+                <div class="about">
+                    <h2 class="title2">Profile</h2>
+                    <p>An innovative Digital designer with a keen eye for detail and a passion for creating visually
+                        stunning designs.
+                        With a blend of creativity and technical proficiency, specializes in crafting captivating
+                        visuals
+                        that resonate
+                        with audiences and elevate brands.</p>
+                </div>
+                <div class="about">
+                    <h2 class="title2">PERSONAL DETAILS</h2>
+                    <div class="box">
+                        <div class="details">
+                            <h5>Date of Birth</h5>
+                        </div>
+                        <div class="text" style="text-indent: 40px;">
+                            <p2>:July 14, 2001</p2>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="details">
+                            <h5>Place of Birth</h5>
+                        </div>
+                        <div class="text" style="text-indent: 25px;">
+                            <p2>:Casiguran, Sorsogon</p2>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="details">
+                            <h5>Gender</h5>
+                        </div>
+                        <div class="text" style="text-indent: 45px;">
+                            <p2>:Female</p2>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="details">
+                            <h5>Age</h5>
+                        </div>
+                        <div class="text" style="text-indent: 46px;">
+                            <p2>:22</p2>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="details">
+                            <h5>Marital Status</h5>
+                        </div>
+                        <div class="text" style="text-indent: 24px;">
+                            <p2>:Single</p2>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="details">
+                            <h5>Religion</h5>
+                        </div>
+                        <div class="text" style="text-indent: 46px;">
+                            <p2>:Catholic</p2>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="details">
+                            <h5>Mother's Name</h5>
+                        </div>
+                        <div class="text" style="text-indent: 28px;">
+                            <p2>:Maria Lita C. Enmil</p2>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="details">
+                            <h5>Father's Name</h5>
+                        </div>
+                        <div class="text" style="text-indent: 38px;">
+                            <p2>:Ricky R. Enmil</p2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Projects">
+                    <h2 class="title2">PROJECTS</h2>
+                    <ul style="margin: 25px;">
+                        <li>
+                            <p2>School Website with Integrated Learning Resource Management System</p2>
+                        </li>
+                        <li>
+                            <p2>To do List Management System</p2>
+                        </li>
+                        <li>
+                            <p2>Book Cover for Online Books</p2>
+                        </li>
+                        <li>
+                            <p2>Publicity Materials</p2>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="about skills">
+                    <h2 class="title2">Technical Skills</h2>
+                    <div class="box">
+                        <h6>Programming Languages (C++, PHP, C#)</h6>
+                        <div class="percent">
+                            <div style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h6>Web Development(HTML, JavaScript, CSS)</h6>
+                        <div class="percent">
+                            <div style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h6>Networking(TCp/ IP, DNS, DHCP)</h6>
+                        <div class="percent">
+                            <div style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h6>Basic Knowledge in Adobe Photoshop</h6>
+                        <div class="percent">
+                            <div style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h6>Basic knowldege in Canva</h6>
+                        <div class="percent">
+                            <div style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h6>Basic knowldege at Proctivity tool(Word, Excel, Powerpoint)</h6>
+                        <div class="percent">
+                            <div style="width: 95%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="about skills">
+                    <h2 class="title2">Competencies</h2>
+                    <div class="box">
+                        <h6>Motivated Attitude</h6>
+                        <div class="percent">
+                            <div style="width: 97%;"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h6>Honesty and Integrity</h6>
+                        <div class="percent">
+                            <div style="width: 98%;"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h6>Interpersonal Communication Skills</h6>
+                        <div class="percent">
+                            <div style="width: 89%;"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h6>Time Management</h6>
+                        <div class="percent">
+                            <div style="width: 95%;"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h6>Critical Thinking</h6>
+                        <div class="percent">
+                            <div style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <h6>Multitasking</h6>
+                        <div class="percent">
+                            <div style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+            style="background-color: #ff66c4; border-color: #ff66c4; color: white; margin-left: 200px;"
+            onclick="window.location.href='https://drive.google.com/file/d/1rNqtQ78YKuQ8eovyYfZtaBXTUPhhS2Ss/view?usp=sharing';"
+            onmousedown="this.style.backgroundColor='#ff66c4';" onmouseup="this.style.backgroundColor='#ff66c4';">
+            DOWNLOAD CV
+        </button>
+
+
+        <footer class="footer mt-auto py-3" style="background-color: white;">
+            <hr> <!-- Separating line -->
+            <!-- <span class="text-muted">Place footer content here.</span> -->
+            <p style="text-align: center; margin-top: 5px;">&copy; 2024 Rebecca Enmil Portfolio</p>
+            <!-- Indication for the footer -->
+        </footer>
+
+        <button onclick="scrollToTop()" id="upBtn" title="Go to top">UP</button>
+        <script>window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("upBtn").style.display = "block";
+                } else {
+                    document.getElementById("upBtn").style.display = "none";
+                }
+            }
+
+            function scrollToTop() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
+    </div>
+</body>
+
+</html>
